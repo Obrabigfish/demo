@@ -5,30 +5,40 @@
             body{
                 margin: 0;
                 padding: 0;
-                background-color: aliceblue;
+                background-color: brown
             }
             
-            div{
-                display: flex;
-                color: blue;
-                height: 100px;
-                width: 100px;
-                text-align: center;
-                margin: 2px;  
-                padding: 20px;
-                border:5px solid red;
-                justify-content: center;
+            .bd{
+                    width: 200px;
+                    background-color: transparent;
+                    border-radius: 5px;
+                    padding: 15px;
+                    box-shadow: 10px 10px 10px 3px;
+                    margin: auto;
+                    text-align: center;
+
             }
+            .btn{
+                display: grid;
+                grid-template-columns: repeat(2,auto);
+                margin: 20px;
+                gap: 10px;
+                width: 200px;
+            }
+         
 
         </style>
     </head>
     <title>MY PAge</title>
     <body>
-      
-        <div class="name">Name</div>
-        <div class="about">About</div>
-        <div class="home">Home</div>
-        <div class="address">Address</div>
-        
+       
+        <div class="bd">Name</div>
+        <div class="bd">About</div>
+        <div class="bd">Home</div>
+        <div class="bd">Address</div>
+        <div class="btn">
+            <button class="btn-l">Start</button>
+            <button class="btn-r">Stop</button>
+        </div>
     </body>
 </html>
